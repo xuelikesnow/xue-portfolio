@@ -492,6 +492,11 @@ b {
 		width: 100%;
 	}
 
+	.section-margin {
+		height: 800px;
+		width: 100%;
+	}
+
 	.progress-bar-wrapper-left {
 		left: auto;
 		right: 0;

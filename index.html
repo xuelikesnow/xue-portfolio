@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Mincho:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+		</style>
+		<title>Vite App</title>
+	</head>
+	<body class="light-theme">
+		<div class="experience">
+			<canvas class="experience-canvas"></canvas>
+		</div>
+
+		<!-- PreLoader -->
+		<!-- <div class="preloader">
+			<div class="preloader-wrapper">
+				<div class="loading">
+					<div class="circle"></div>
+					<div class="circle"></div>
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div> -->
+		<div class="header">
+			<div class="header-wrapper">
+				<p class="header-text" style="overflow: hidden">
+					Xue Jiang · 姜好雪 | Digital Portfolio
+				</p>
+			</div>
+		</div>
+
+		<div class="page" asscroll-container>
+			<div class="toggle-bar">
+				<div class="sun-wrapper">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24"
+						viewBox="0 -960 960 960"
+						width="24">
+						<path
+							d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Z" />
+					</svg>
+				</div>
+				<button class="toggle-button">
+					<div class="toggle-circle"></div>
+				</button>
+				<div class="moon-wrapper">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="24"
+						viewBox="0 -960 960 960"
+						width="24">
+						<path
+							d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+					</svg>
+				</div>
+			</div>
+
+			<div class="page-wrapper" asscroll>
+				<section class="hero">
+					<div class="preloader">
+						<div class="preloader-wrapper">
+							<div class="loading">
+								<div class="circle"></div>
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+					<div class="hero-wrapper">
+						<h1 class="ml11">
+							<span class="text-wrapper">
+								<span class="line line1"></span>
+								<span class="letters"
+									>Hi! This is Xue's portfolio :&#41;</span
+								>
+							</span>
+						</h1>
+						<div class="arrow-svg-wrapper">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								viewBox="0 -960 960 960"
+								width="24">
+								<path
+									color="currentColor"
+									d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" />
+							</svg>
+						</div>
+						<div class="hero-main">
+							<h1
+								class="hero-main-title"
+								style="overflow: hidden">
+								<h1 class="ml12">
+									<span class="text-wrapper">
+										<span class="line line2"></span>
+										<span class="letters"> Xue Jiang </span>
+									</span>
+								</h1>
+							</h1>
+							<p
+								class="hero-main-desc"
+								style="overflow: hidden"></p>
+							<h1 class="ml13">
+								<span class="text-wrapper">
+									<span class="line line3"></span>
+									<span class="letters">
+										Computer Science + Design at UPenn</span
+									>
+								</span>
+							</h1>
+						</div>
+					</div>
+				</section>
+
+				<div class="first-move section-margin"></div>
+
+				<section class="first-section section left">
+					<div class="progress-wrapper progress-bar-wrapper-left">
+						<div class="progress-bar"></div>
+					</div>
+
+					<div class="section-intro-wrapper">
+						<h1 class="section-title">
+							<span class="section-title-text">ABOUT ME</span>
+							<div class="section-title-decor"></div>
+						</h1>
+						<span class="section-num">01</span>
+					</div>
+
+					<div class="section-detail-wrapper">
+						<p class="section-text">
+							Hi! My name is Xue. I'm pursuing a degree in
+							<b>Computer Science</b>
+							with minorsin Design and Cinema Studies at the
+							University of Pennsylvania. Please check out my
+							personal website:
+							<a href="https://xue.super.site" target="_blank"
+								>xue.super.site</a
+							>!
+						</p>
+						<p class="section-text">
+							<b
+								>This portfolio website is designed and
+								developed completely by me</b
+							>
+							using HTML/CSS/Javascript and libraries such as
+							THREE.js and anime.js, with
+							<b>all 3D assets built from scratch using Blender</b
+							>.
+						</p>
+						<p class="section-text">
+							<b>Credits:</b> the website's original idea inspired
+							by
+							<a href="https://bokoko33.me/" target="_blank"
+								>bokoko33.me</a
+							>
+						</p>
+					</div>
+				</section>
+
+				<div class="second-move section-margin"></div>
+
+				<section class="second-section section right">
+					<div class="progress-wrapper progress-bar-wrapper-right">
+						<div class="progress-bar blue-background"></div>
+					</div>
+					<div class="section-intro-wrapper blue-border">
+						<h1 class="section-title">
+							<span class="section-title-text blue-border"
+								>MY WORK</span
+							>
+							<div
+								class="section-title-decor blue-background"></div>
+						</h1>
+						<span class="section-num">02</span>
+					</div>
+
+					<div class="section-detail-wrapper blue-text">
+						<h3 class="section-heading">
+							Full Art & Design
+							<a
+								href="https://xue.super.site/portfolio"
+								target="_blank"
+								>Portfolio</a
+							>
+						</h3>
+						<p class="section-text">Check out more of my art!</p>
+						<h3 class="section-heading">
+							My
+							<a
+								href="https://github.com/xuelikesnow"
+								target="_blank"
+								>GitHub</a
+							>
+						</h3>
+						<p class="section-text">More of my CS projects.</p>
+						<h3 class="section-heading">Sticky's Situation</h3>
+						<p class="section-text">
+							An original video game designed and developed by a
+							team of five, in which I was the
+							<b>team producer and one of the two programmers</b>.
+						</p>
+						<h3 class="section-heading">Boba Bobble</h3>
+						<p class="section-text">
+							Demo
+							<a
+								href="https://drive.google.com/file/d/1p6aylZtYlKXR5Kyv2xkCxEIplfESdAWx/view"
+								target="_blank"
+								>here.</a
+							>
+							Classic arcade game Puzzle Bubble, but boba themed!
+							Designed and developed by a team of 5, for which I
+							was a <b>programmer</b>.
+						</p>
+					</div>
+				</section>
+
+				<div class="third-move section-margin"></div>
+
+				<section class="third-section section left">
+					<div class="progress-wrapper progress-bar-wrapper-left">
+						<div class="progress-bar green-background"></div>
+					</div>
+					<div class="section-intro-wrapper green-border">
+						<h1 class="section-title">
+							<span class="section-title-text green-border"
+								>Contact Me</span
+							>
+							<div
+								class="section-title-decor green-background"></div>
+						</h1>
+						<span class="section-num">03</span>
+					</div>
+
+					<div class="section-detail-wrapper green-text">
+						<h3 class="section-heading">Let's stay in touch!</h3>
+						<p class="section-text">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								viewBox="0 -960 960 960"
+								width="24"
+								color="currentColor">
+								<path
+									d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+							</svg>
+							<a href="https://xue.super.site" target="_blank"
+								>Personal Website</a
+							>
+						</p>
+						<p class="section-text">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="24"
+								viewBox="0 -960 960 960"
+								width="24"
+								color="currentColor">
+								<path
+									d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+							</svg>
+							<a href="mailto:haoxuej@seas.upenn.edu">Email Me</a>
+						</p>
+						<p class="section-text">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								color="currentColor">
+								<path
+									d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+							</svg>
+							<a
+								href="https://www.linkedin.com/in/haoxuej"
+								target="_blank"
+								>LinkedIn</a
+							>
+						</p>
+						<p class="section-text">
+							<svg
+								fill="#000000"
+								width="24px"
+								height="24px"
+								viewBox="0 0 24 24"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+								color="currentColor">
+								<title>Letterboxd icon</title>
+								<path
+									d="M8.29 16.752V7.2H6.546V4.8h6.328v2.4h-1.746v9.574h3.925v-2.618h2.839V19.2H6.545v-2.448h1.746zM0 12c0 6.628 5.372 12 12 12s12-5.372 12-12S18.628 0 12 0 0 5.372 0 12z" />
+							</svg>
+							<a
+								href="https://letterboxd.com/xuejiang"
+								target="_blank"
+								>Letterboxd</a
+							>
+						</p>
+						<p class="section-text">
+							<svg
+								width="24"
+								height="24"
+								xmlns="http://www.w3.org/2000/svg"
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								color="currentColor">
+								<path
+									d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z" />
+							</svg>
+							<a
+								href="https://open.spotify.com/user/jiangdandan666?si=b678d5b910e94077"
+								target="_blank"
+								>Spotify</a
+							>
+						</p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

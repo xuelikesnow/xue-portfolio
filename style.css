@@ -18,14 +18,11 @@ svg {
 	transition: background-color 0.2s, color 0.2s;
 }
 
-a {
-	color: var(--color-accent);
-}
-
 :root {
 	/* light theme colors */
 	--light-background-color: #e4d8e0;
-	--light-text-color: #191923;
+	--light-text-color: #3a2e2a;
+	--light-section-color: #3a2e2a;
 	--light-primary: #f7f1e1;
 	--light-deep-accent: #4f759b;
 	--light-accent: #a7618e;
@@ -33,6 +30,7 @@ a {
 
 	/* dark theme colors */
 	--dark-text-color: #fff5fc;
+	--dark-section-color: #1a1722;
 	--dark-background-color: #a7618e;
 	--dark-primary: #c1caed;
 	--dark-deep-accent: #313d8b;
@@ -41,7 +39,8 @@ a {
 }
 
 .light-theme {
-	--color-text: var(--color-text);
+	--color-text: var(--light-text-color);
+	--color-section: var(--light-section-color);
 	--color-background: var(--light-background-color);
 	--color-primary: var(--light-primary);
 	--color-deep-accent: var(--light-deep-accent);
@@ -51,6 +50,7 @@ a {
 
 .dark-theme {
 	--color-text: var(--dark-text-color);
+	--color-section: var(--darks-section-color);
 	--color-background: var(--dark-background-color);
 	--color-primary: var(--dark-primary);
 	--color-deep-accent: var(--dark-deep-accent);
@@ -68,10 +68,6 @@ a {
 .experience-canvas {
 	width: 100%;
 	height: 100%;
-}
-
-.hidden {
-	display: none;
 }
 
 /* Page ---------------------------------------------*/
@@ -114,6 +110,8 @@ a {
 	align-items: center;
 	top: 90%;
 	right: 48px;
+	border-radius: 99px;
+	background-color: var(--color-background);
 	z-index: 10000000;
 }
 
@@ -123,6 +121,7 @@ a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin: 0px 5px;
 	fill: var(--color-accent);
 }
 
@@ -136,7 +135,7 @@ a {
 	align-items: center;
 	background-color: var(--color-accent);
 	border-radius: 999px;
-	margin: 0px 16px;
+	margin: 5px 11px;
 	border: none;
 	box-shadow: #32325d40 0px 6px 12px -2px, #0000004d 0px 3px 7px -3px;
 }
@@ -171,7 +170,7 @@ a {
 	padding: 350px 4%;
 	margin: 0;
 	background-color: var(--color-primary);
-	color: var(--color-text);
+	color: var(--color-section);
 	overflow: hidden;
 }
 
@@ -222,26 +221,28 @@ a {
 .section-detail-wrapper {
 	position: relative;
 	padding: 20% 5%;
+	color: var(---light-text-color);
 }
 
 .section-heading {
 	font-size: 24px;
 	font-weight: 700;
-	line-height: 1.8;
 	margin-top: 0px;
 }
 
 .section-text {
 	line-height: 2;
-	margin-top: 3px;
-	margin-bottom: 18px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 	font-size: 20px;
 }
 
+a,
 b {
-	color: var(--light-accent);
+	color: var(--color-accent);
 }
 
+.blue-text svg,
 .blue-text a,
 .blue-text b {
 	color: var(--color-deep-accent);
@@ -373,7 +374,7 @@ b {
 	top: 45%;
 	left: 50%;
 	font-weight: 500;
-	font-size: 28px;
+	font-size: 1.8vw;
 	font-family: "Space Mono", monospace;
 	transform: translate(-50%, -50%);
 }
@@ -390,7 +391,7 @@ b {
 
 .ml12 {
 	font-weight: 500;
-	font-size: 60px;
+	font-size: 3vw;
 	color: var(--color-text);
 	font-family: "Prompt", sans-serif;
 	opacity: 0;
@@ -401,14 +402,14 @@ b {
 	position: absolute;
 	left: 0;
 	height: 80%;
-	width: 3px;
+	width: 3.3px;
 	background-color: black;
 	transform-origin: 0 50%;
 }
 
 .ml13 {
 	font-weight: 300;
-	font-size: 25px;
+	font-size: 1.8vw;
 	color: var(--color-accent);
 	font-family: "Prompt", sans-serif;
 	opacity: 0;
@@ -446,7 +447,7 @@ b {
 .arrow-svg-wrapper {
 	opacity: 0;
 	position: absolute;
-	top: 90%;
+	top: 85%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	animation: bounce 0.5s ease-in alternate infinite;
@@ -481,15 +482,9 @@ b {
 	left: 0;
 }
 
-/* .hero-main-title {
-	font-size: 60px;
-	color: var(--color-text);
-} */
-
-/* .hero-main-desc {
-	font-size: 20px;
-	color: var(--color-accent);
-} */
+.hidden {
+	display: none;
+}
 
 /* media queries --------------------------------------*/
 @media (max-width: 968px) {
@@ -515,7 +510,7 @@ b {
 	}
 
 	.hero-main {
-		bottom: 150px;
+		bottom: 170px;
 	}
 	.toggle-bar {
 		top: 5%;

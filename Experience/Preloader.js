@@ -44,14 +44,11 @@ export default class Preloader extends EventEmitter {
 			this.timeline = new GSAP.timeline();
 			this.timeline.to(".preloader", {
 				opacity: 0,
-				delay: 1,
+				delay: 0.3,
 				onComplete: () => {
 					document
 						.querySelector(".preloader")
-						.classList.add(".hidden");
-					document
-						.querySelector(".preloader .preloader-wrapper")
-						.classList.add(".hidden");
+						.classList.add("hidden");
 				},
 			});
 			if (!this.isMobile) {
@@ -83,8 +80,7 @@ export default class Preloader extends EventEmitter {
 						duration: 0.7,
 					});
 			}
-			this.animation = anime
-				.timeline({ loop: false })
+			this.animation = new anime.timeline()
 				.add({
 					targets: ".ml11 .line",
 					scaleY: [0, 1],
@@ -119,19 +115,16 @@ export default class Preloader extends EventEmitter {
 					{
 						targets: ".toggle-bar",
 						opacity: 1,
+						complete: resolve,
 					},
 					"-=1000"
 				);
-
-			this.tick = anime.timeline({ loop: true }).add({
+			anime.timeline({ loop: true }).add({
 				targets: ".ml11 .line",
 				opacity: 0,
-				easing: "easeOutExpo",
-				duration: 1000,
-				autoplay: false,
-				delay: 1000,
+				duration: 1200,
+				easing: "easeInOutSine",
 			});
-			this.animation.finished.then(resolve);
 		});
 	}
 

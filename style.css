@@ -490,10 +490,11 @@ b {
 @media (max-width: 968px) {
 	.section {
 		width: 100%;
+		padding: 800px 4%;
 	}
 
 	.section-margin {
-		height: 790px;
+		height: 700px;
 		width: 100%;
 	}
 

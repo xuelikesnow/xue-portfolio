@@ -488,6 +488,10 @@ b {
 
 /* media queries --------------------------------------*/
 @media (max-width: 968px) {
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+	}
+
 	.section {
 		width: 100%;
 		padding: 800px 4%;

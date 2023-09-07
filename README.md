@@ -1,5 +1,5 @@
 # Welcome to My Portfolio Website!
-[Live Demo](xue-portfolio.vercel.app)
+[Live Demo - Deployed Website](https://xue-portfolio.vercel.app/)
 
 This portfolio website is a month-long project developed completely by me using HTML/CSS/Javascript and libraries such as GSAP, THREE.js and anime.js, with all 3D assets made by me from scratch using Blender.
 
